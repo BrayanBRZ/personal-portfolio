@@ -1,0 +1,31 @@
+.contact {
+    padding: 4rem 0 3rem;
+}
+
+.contact p {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 440px;
+    line-height: 1.85;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.2rem;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.contact-link:hover {
+    color: var(--white);
+    border-color: var(--white);
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Dev</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <nav>
+    <span class="nav-name">Brayan Barros</span>
+    <ul class="nav-links">
+      <li><a href="#projects" data-i18n="nav-projects">projetos</a></li>
+      <li><a href="#contact" data-i18n="nav-contact">contato</a></li>
+      <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+    </ul>
+  </nav>
+
+  <!-- apresentação inicial -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="assets/431_035_0107.jpg" alt="Brayan Barros">
+      </div>
+
+      <div class="hero-text">
+        <h1 data-i18n="hero-title">Olá, me chamo<br>Brayan Barros.</h1>
+        <p data-i18n="hero-desc">
+          Estudante de Engenharia de Software no IFPR e estagiário na Unimake Software.
+          Gosto de construir coisas do zero e aprender com cada projeto.
+        </p>
+
+        <div class="status-container">
+          <div class="status">
+            <div class="status-dot"></div>
+            <span data-i18n="status-work">estagiário na Unimake Software</span>
+          </div>
+
+          <!-- integração com API (GitHub) -->
+          <div class="api-stat" id="github-stats">
+            <i class="devicon-github-original github-icon"></i>
+            <span id="repo-count">...</span> <span data-i18n="api-repos">repos</span>
+            <span style="margin: 0 4px">|</span>
+            <span id="follower-count">...</span> <span data-i18n="api-followers">seguidores</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- experiência/educação -->
+  <section class="about">
+    <div class="about-block">
+      <p class="section-label" data-i18n="label-education">formação</p>
+
+      <div class="about-item">
+        <div class="about-item-value" data-i18n="edu-1-title">Bacharelado em Engenharia de Software</div>
+        <div class="about-item-sub">IFPR — Paranavaí, PR</div>
+        <div class="about-item-label" data-i18n="edu-1-date">2024 — 2027 (Cursando)</div>
+      </div>
+
+      <div class="about-item">
+        <div class="about-item-value" data-i18n="edu-2-title">Técnico em Informática</div>
+        <div class="about-item-sub">IFPR — Paranavaí, PR</div>
+        <div class="about-item-label" data-i18n="edu-2-date">2020 — 2023 (Concluído)</div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <p class="section-label" data-i18n="label-experience">experiência</p>
+
+      <div class="about-item">
+        <div class="about-item-value" data-i18n="exp-1-title">Suporte Técnico em Informática</div>
+        <div class="about-item-sub">KLS Games — Paranavaí, PR</div>
+        <div class="about-item-label">2025</div>
+      </div>
+
+      <div class="about-item">
+        <div class="about-item-value" data-i18n="exp-2-title">Desenvolvedor (Estagiário)</div>
+        <div class="about-item-sub">Unimake Software — Paranavaí, PR</div>
+        <div class="about-item-label" data-i18n="exp-2-date">2025 — Atual</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- habilidades -->
+  <section class="skills">
+    <p class="section-label" data-i18n="label-tech">tecnologias</p>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+          <span class="skill-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+          <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+          <span class="skill-tag"><i class="devicon-php-plain colored"></i> PHP</span>
+          <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+          <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+          <span class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+        </div>
+        <div class="marquee-group">
+          <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+          <span class="skill-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+          <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+          <span class="skill-tag"><i class="devicon-php-plain colored"></i> PHP</span>
+          <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+          <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+          <span class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projetos -->
+  <section id="projects" class="projects">
+    <div class="projects-header">
+      <p class="section-label" data-i18n="label-projects">projetos</p>
+      <span style="font-size:0.7rem; color: var(--muted);" data-i18n="label-repos-count">3 repositórios</span>
+    </div>
+
+    <!-- sistemaloja -->
+    <a class="project-card" href="https://github.com/BrayanBRZ/sistemaloja">
+      <img src="https://placehold.co/600x300/222/666?text=Sistema+Loja" alt="Sistema Loja" class="project-img">
+
+      <div class="project-content">
+        <div class="project-head">
+          <span class="project-name">sistemaloja</span>
+          <span class="project-lang"><i class="devicon-javascript-plain"></i> JavaScript</span>
+        </div>
+        <p class="project-desc" data-i18n="proj-1-desc">
+          Sistema de gerenciamento de loja com back-end em Node.js. Inclui cadastro de produtos, controle de estoque e
+          registro de vendas.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="ptag">Node.js</span>
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">Back-end</span>
+          </div>
+          <span class="project-link">github ↗</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- monocycle-emu-project -->
+    <a class="project-card" href="https://github.com/BrayanBRZ/monocycle-emu-project">
+      <img src="https://placehold.co/600x300/222/666?text=C%2B%2B+Emulator" alt="Emulator" class="project-img">
+
+      <div class="project-content">
+        <div class="project-head">
+          <span class="project-name">monocycle-emu-project</span>
+          <span class="project-lang"><i class="devicon-cplusplus-plain"></i> C++</span>
+        </div>
+        <p class="project-desc" data-i18n="proj-2-desc">
+          Emulador de um processador monociclo implementado em C++. Simula o ciclo de busca, decodificação e execução de
+          instruções.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="ptag">C++</span>
+            <span class="ptag">Arquitetura</span>
+            <span class="ptag">Low-level</span>
+          </div>
+          <span class="project-link">github ↗</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- desktop-game-manager -->
+    <a class="project-card" href="https://github.com/BrayanBRZ/desktop-game-manager">
+      <img src="https://placehold.co/600x300/222/666?text=Java+Desktop" alt="Game Manager" class="project-img">
+
+      <div class="project-content">
+        <div class="project-head">
+          <span class="project-name">desktop-game-manager</span>
+          <span class="project-lang"><i class="devicon-java-plain"></i> Java</span>
+        </div>
+        <p class="project-desc" data-i18n="proj-3-desc">
+          Aplicação desktop para organizar e gerenciar uma biblioteca de jogos. Permite catalogar, filtrar e acompanhar
+          o progresso.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">Desktop</span>
+            <span class="ptag">CLI</span>
+          </div>
+          <span class="project-link">github ↗</span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- contato -->
+  <section id="contact" class="contact">
+    <p class="section-label" data-i18n="label-contact">contato</p>
+    <p data-i18n="contact-desc">Quer trocar uma ideia, colaborar em algum projeto ou só dar um oi? Me manda uma
+      mensagem.</p>
+    <div class="contact-links">
+      <a href="mailto:brayanbarrosdm@gmail.com" class="contact-link">brayanbarrosdm@gmail.com</a>
+      <a href="https://github.com/brayanbrz" class="contact-link">github</a>
+      <a href="https://www.linkedin.com/in/brayan-barros-2912b221a/" class="contact-link">linkedin</a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

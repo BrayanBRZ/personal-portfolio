@@ -1,0 +1,36 @@
+.about {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.about-item {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-item:first-of-type {
+    border-top: 1px solid var(--border);
+}
+
+.about-item-label {
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.08em;
+}
+
+.about-item-value {
+    font-size: 0.82rem;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.about-item-sub {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+}
