@@ -12,11 +12,13 @@
 
 <body>
 
-  <nav>
+  <nav id="main-nav">
 
     <span class="nav-logo">Brayan Barros</span>
 
     <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav-about">jornada</a></li>
+      <li><a href="#skills" data-i18n="nav-skills">stack</a></li>
       <li><a href="#projects" data-i18n="nav-projects">projetos</a></li>
       <li><a href="#contact" data-i18n="nav-contact">contato</a></li>
       <li><button id="lang-toggle" class="lang-btn">EN</button></li>
@@ -60,10 +62,10 @@
   </section>
 
   <!-- experiência/educação -->
-  <section class="about">
+  <section id="about" class="about">
 
     <p class="section-subtitle" data-i18n="about-subtitle">trajetória</p>
-    <h1 class="section-title" data-i18n="about-title">JORNADA</h1>
+    <h1 class="section-title" data-i18n="about-section-title">JORNADA</h1>
 
     <div class="about-body">
 
@@ -109,10 +111,10 @@
   </section>
 
   <!-- habilidades -->
-  <section class="skills">
+  <section id="skills" class="skills">
 
-    <p class="section-subtitle" data-i18n="about-subtitle">tecnologias</p>
-    <h1 class="section-title" data-i18n="about-title">MINHA STACK</h1>
+    <p class="section-subtitle" data-i18n="skills-subtitle">tecnologias</p>
+    <h1 class="section-title" data-i18n="skills-section-title">MINHA STACK</h1>
 
     <div class="skills-body">
 
@@ -120,7 +122,6 @@
         Trabalho com um conjunto de tecnologias que cobre front-end, back-end e sistemas de baixo nível.
       </p>
 
-      <!-- <p class="section-label" data-i18n="label-tech">tecnologias</p> -->
       <div class="marquee-wrapper">
         <div class="marquee-track">
           <div class="marquee-group">
@@ -153,22 +154,23 @@
   <!-- projetos -->
   <section id="projects" class="projects">
 
-    <p class="section-subtitle" data-i18n="about-subtitle">portfólio</p>
-    <h1 class="section-title" data-i18n="about-title">PROJETOS</h1>
+    <p class="section-subtitle" data-i18n="projects-subtitle">portfólio</p>
+    <h1 class="section-title" data-i18n="projects-section-title">PROJETOS</h1>
 
     <div class="projects-body">
 
-      <!-- sistemaloja -->
+      <!-- memo-game -->
       <a class="project-card" href="https://github.com/BrayanBRZ/memo-game">
-        <img src="https://placehold.co/600x300/222/666?text=Sistema+Loja" alt="Sistema Loja" class="project-img">
+        <img src="https://placehold.co/600x300/222/666?text=Memo+Game" alt="Memo Game" class="project-img">
 
         <div class="project-content">
           <div class="project-head">
             <span class="project-name">memo-game</span>
             <span class="project-lang"><i class="devicon-javascript-plain"></i> JavaScript</span>
           </div>
-          <p class="project-desc" data-i18n="">
-            Jogo da memória feito com HTML, CSS e JavaScript. Foi realizado integração com uma API para os jogadores competirem entre si.
+          <p class="project-desc" data-i18n="proj-1-desc">
+            Jogo da memória feito com HTML, CSS e JavaScript. Foi realizado integração com uma API para os jogadores
+            competirem entre si.
           </p>
         </div>
       </a>
@@ -185,8 +187,7 @@
           </div>
           <p class="project-desc" data-i18n="proj-2-desc">
             Emulador de um processador monociclo implementado em C++. Simula o ciclo de busca, decodificação e execução
-            de
-            instruções.
+            de instruções.
           </p>
         </div>
       </a>
@@ -203,8 +204,7 @@
           </div>
           <p class="project-desc" data-i18n="proj-3-desc">
             Aplicação desktop para organizar e gerenciar uma biblioteca de jogos. Permite catalogar, filtrar e
-            acompanhar
-            o progresso.
+            acompanhar o progresso.
           </p>
         </div>
       </a>
@@ -215,15 +215,47 @@
 
   <!-- contato -->
   <section id="contact" class="contact">
-    <p class="section-label" data-i18n="label-contact">contato</p>
-    <p data-i18n="contact-desc">Quer trocar uma ideia, colaborar em algum projeto ou só dar um oi? Me manda uma
-      mensagem.</p>
-    <div class="contact-links">
+
+    <p class="section-subtitle" data-i18n="projects-subtitle">contato</p>
+    <h1 class="section-title" data-i18n="projects-section-title">VAMOS CONVERSARS</h1>
+
+    <div class="contact-body">
+
+      <p data-i18n="contact-desc">
+        Quer trocar uma ideia, colaborar em algum projeto ou só dar um oi? Me manda uma mensagem.
+      </p>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name" data-i18n="form-label-name">nome</label>
+            <input type="text" id="form-name" data-i18n-placeholder="form-placeholder-name" placeholder="seu nome"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="form-email" data-i18n="form-label-email">e-mail</label>
+            <input type="email" id="form-email" data-i18n-placeholder="form-placeholder-email"
+              placeholder="seu@email.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-message" data-i18n="form-label-message">mensagem</label>
+          <textarea id="form-message" data-i18n-placeholder="form-placeholder-message" placeholder="sua mensagem..."
+            rows="4" required></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-i18n="form-send">enviar</button>
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- <div class="contact-links">
       <a href="mailto:brayanbarrosdm@gmail.com" class="contact-link">brayanbarrosdm@gmail.com</a>
       <a href="https://github.com/brayanbrz" class="contact-link">github</a>
       <a href="https://www.linkedin.com/in/brayan-barros-2912b221a/" class="contact-link">linkedin</a>
-    </div>
-  </section>
+    </div> -->
 
   <script src="js/script.js"></script>
 </body>

@@ -1,20 +1,33 @@
 .contact {
-    padding: 4rem 0 3rem;
+    align-items: center;
 }
 
-.contact p {
+/* .contact p {
     color: var(--muted);
     font-size: 0.82rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
     max-width: 440px;
     line-height: 1.85;
+} */
+
+.contact-body {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    align-items: center;
+    width: 80%;
+    /* height: 70%; */
+    gap: 3.75rem;
+    /* padding-bottom: 20px; */
 }
 
 .contact-links {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
 .contact-link {
@@ -28,4 +41,93 @@
 .contact-link:hover {
     color: var(--white);
     border-color: var(--white);
+}
+
+/* formulário */
+.contact-form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 560px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.form-group input,
+.form-group textarea {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 0.65rem 0.85rem;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #444;
+}
+
+.form-submit {
+    align-self: flex-start;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 300;
+    padding: 0.55rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form-submit:hover {
+    background: var(--surface);
+    border-color: #444;
+}
+
+.form-feedback {
+    font-size: 0.72rem;
+    color: var(--accent);
+    min-height: 1rem;
+    margin: 0;
+}
+
+.form-feedback.error {
+    color: #e57373;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
