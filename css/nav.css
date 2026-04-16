@@ -1,6 +1,5 @@
 nav {
     position: fixed;
-    top: 20px;
     left: 0;
     right: 0;
     z-index: 300;
@@ -43,7 +42,6 @@ nav.nav-scrolled {
     color: var(--white);
 }
 
-/* botão de idioma */
 .lang-btn {
     background: transparent;
     border: 1px solid var(--border);

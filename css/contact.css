@@ -2,15 +2,6 @@
     align-items: center;
 }
 
-/* .contact p {
-    color: var(--muted);
-    font-size: 0.82rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    max-width: 440px;
-    line-height: 1.85;
-} */
-
 .contact-body {
     padding-top: 2rem;
     display: flex;
@@ -18,9 +9,7 @@
     /* justify-items: center; */
     align-items: center;
     width: 80%;
-    /* height: 70%; */
     gap: 3.75rem;
-    /* padding-bottom: 20px; */
 }
 
 .contact-links {
