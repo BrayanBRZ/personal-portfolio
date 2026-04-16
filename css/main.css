@@ -11,7 +11,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 :root {
@@ -24,38 +24,30 @@
 }
 
 body {
-    background: var(--bg);
-    color: var(--white);
     font-family: 'JetBrains Mono', monospace;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 1.6;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    background: var(--bg);
+    color: var(--white);
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    max-width: 90%;
+    padding: 30px;
+    display: flex;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-}
-
-/* botão de idioma */
-.lang-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--white);
-    font-family: inherit;
-    padding: 0.3rem 0.6rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    transition: all 0.2s;
-}
-
-.lang-btn:hover {
-    border-color: var(--muted);
-    background: var(--surface);
 }
 
 /* section-label */

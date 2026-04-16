@@ -1,13 +1,15 @@
 nav {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 300;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 5rem;
+    padding: 0 5vw;
 }
 
-.nav-name {
+.nav-logo {
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -27,4 +29,22 @@ nav {
 
 .nav-links a:hover {
     color: var(--white);
+}
+
+/* botão de idioma */
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: inherit;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover {
+    border-color: var(--muted);
+    background: var(--surface);
 }
