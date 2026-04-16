@@ -90,7 +90,7 @@ contactForm.addEventListener('submit', (e) => {
         return;
     }
 
-    // simula envio — substitua por fetch() real se necessário
+    // simula envio
     const submitBtn = contactForm.querySelector('.form-submit');
     submitBtn.disabled = true;
 
