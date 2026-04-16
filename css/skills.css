@@ -1,9 +1,21 @@
 .skills {
-    padding: 4rem 0;
-    border-bottom: 1px solid var(--border);
+    align-items: center;
+}
+
+.skills-body {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+    gap: 3.75rem;
+    /* padding-bottom: 20px; */
 }
 
 .marquee-wrapper {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
@@ -15,20 +27,18 @@
     animation: marquee 22s linear infinite;
 }
 
-.marquee-track:hover {
-    animation-play-state: paused;
-}
-
 .marquee-group {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     padding-right: 0.75rem;
+    /* flex-shrink: 0; */
 }
 
 .skill-tag {
     display: flex;
     align-items: center;
+    font-size: 20px;
     gap: 0.5rem;
     padding: 0.4rem 0.5rem;
     border-radius: 3px;
