@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;                    /* Dá espaço entre o email, github e linkedin */
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column; /* Empilha os itens */
+    gap: 1rem;              /* Adiciona espaço entre eles quando empilhados */
+  }
+}

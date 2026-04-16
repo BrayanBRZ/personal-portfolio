@@ -36,6 +36,7 @@ nav.nav-scrolled {
     color: var(--muted);
     font-size: 0.8rem;
     transition: color 0.2s;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
@@ -72,7 +73,7 @@ nav.nav-scrolled {
     }
 
     .nav-links {
-        gap: 1rem;
+        display: none;
     }
 
     .nav-links li:nth-child(1),

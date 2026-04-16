@@ -25,6 +25,7 @@
 }
 
 .project-card {
+    text-decoration: none;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 4px;
