@@ -23,6 +23,7 @@ nav.nav-scrolled {
 .nav-logo {
     font-weight: 500;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .nav-links {
