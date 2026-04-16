@@ -39,5 +39,6 @@
     "form-placeholder-message": "your message...",
     "form-send": "send",
     "form-success": "Message sent! I'll get back to you soon.",
-    "form-error": "Please fill in all fields before sending."
+    "form-error": "Please fill in all fields before sending.",
+    "footer-desc": "Built with HTML, CSS, and JavaScript"
 }

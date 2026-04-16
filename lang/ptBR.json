@@ -39,5 +39,6 @@
     "form-placeholder-message": "sua mensagem...",
     "form-send": "enviar",
     "form-success": "Mensagem enviada! Em breve entro em contato.",
-    "form-error": "Preencha todos os campos antes de enviar."
+    "form-error": "Preencha todos os campos antes de enviar.",
+    "footer-desc": "Construído com HTML, CSS e JavaScript"
 }
